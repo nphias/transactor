@@ -1,0 +1,16 @@
+[package]
+authors = ["nphias@gmail.com","guillem.cordoba@gmail.com"]
+edition = "2018"
+exclude = ["ui", "example-dna"]
+name = "transactor"
+version = "0.0.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "transactor"
+
+[dependencies]
+derive_more = "0"
+serde = "1"
+
+hdk3 = {git = "https://github.com/holochain/holochain", rev = "44cf2a6", package = "hdk3"}
